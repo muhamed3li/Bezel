@@ -59,7 +59,8 @@ h6::selection {
 
 nav {
     background-color: #fff;
-    box-shadow: 5px 5px 15px 0 rgba(31, 31, 31, 0.07);
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(31, 31, 31, 0.07);
+            box-shadow: 5px 5px 15px 0 rgba(31, 31, 31, 0.07);
 }
 
 nav .navbar-toggler {
@@ -180,6 +181,7 @@ nav img {
     border: 1px solid #fff;
     position: relative;
     padding: 15px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, white));
     background: linear-gradient(to right, transparent 50%, white 50%);
     background-size: 200%;
     border-left: 0;
@@ -195,6 +197,7 @@ nav img {
     border-top: none;
     position: relative;
     padding: 15px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, white));
     background: linear-gradient(to right, transparent 50%, white 50%);
     background-size: 200%;
     border-left: 0;
@@ -222,7 +225,7 @@ nav img {
 .right-arrow {
     color: #fff;
     position: absolute;
-    top: 351px;
+    top: 348px;
     border-top: none;
 }
 
@@ -238,11 +241,223 @@ nav img {
 
 .anim-about:after {
     content: "";
-    animation-name: anim;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-delay: s;
+    -webkit-animation-name: anim;
+            animation-name: anim;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     color: #00C3DA;
+}
+
+@-webkit-keyframes anim {
+    0% {
+        content: "|";
+    }
+
+    2% {
+        content: "a|";
+    }
+
+    4% {
+        content: "ap|";
+    }
+
+    6% {
+        content: "app|";
+    }
+
+    8% {
+        content: "apps|";
+    }
+
+    10% {
+        content: "app|";
+    }
+
+    12% {
+        content: "ap|";
+    }
+
+    14% {
+        content: "a|";
+    }
+
+    16% {
+        content: "|";
+    }
+
+    18% {
+        content: "|";
+    }
+
+    20% {
+        content: "|";
+    }
+
+    22% {
+        content: "|";
+    }
+
+    24% {
+        content: "|";
+    }
+
+    26% {
+        content: "w|";
+    }
+
+    28% {
+        content: "we|";
+    }
+
+    30% {
+        content: "web|";
+    }
+
+    32% {
+        content: "webs|";
+    }
+
+    34% {
+        content: "websi|";
+    }
+
+    36% {
+        content: "websit|";
+    }
+
+    38% {
+        content: "website|";
+    }
+
+    40% {
+        content: "websites|";
+    }
+
+    42% {
+        content: "website|";
+    }
+
+    44% {
+        content: "websit|";
+    }
+
+    46% {
+        content: "websi|";
+    }
+
+    48% {
+        content: "webs|";
+    }
+
+    50% {
+        content: "web|";
+    }
+
+    52% {
+        content: "we|";
+    }
+
+    54% {
+        content: "w|";
+    }
+
+    56% {
+        content: "|";
+    }
+
+    58% {
+        content: "|";
+    }
+
+    60% {
+        content: "|";
+    }
+
+    62% {
+        content: "|";
+    }
+
+    64% {
+        content: "|";
+    }
+
+    66% {
+        content: "|";
+    }
+
+    68% {
+        content: "s|";
+    }
+
+    70% {
+        content: "so|";
+    }
+
+    72% {
+        content: "sof|";
+    }
+
+    74% {
+        content: "soft|";
+    }
+
+    76% {
+        content: "softw|";
+    }
+
+    78% {
+        content: "softwa|";
+    }
+
+    80% {
+        content: "softwar|";
+    }
+
+    82% {
+        content: "software|";
+    }
+
+    84% {
+        content: "softwares|";
+    }
+
+    86% {
+        content: "software|";
+    }
+
+    88% {
+        content: "softwar|";
+    }
+
+    90% {
+        content: "softwa|";
+    }
+
+    92% {
+        content: "softw|";
+    }
+
+    94% {
+        content: "soft|";
+    }
+
+    96% {
+        content: "sof|";
+    }
+
+    98% {
+        content: "so|";
+    }
+
+    99% {
+        content: "s|";
+    }
+
+    100% {
+        content: "|";
+    }
 }
 
 @keyframes anim {
@@ -532,6 +747,7 @@ nav img {
     height: 100%;
     background-color: rgba(0, 195, 218, 0.9);
     opacity: 0;
+    -webkit-transition: all .3s;
     transition: all .3s;
 }
 
@@ -600,6 +816,7 @@ nav img {
 .works-title hr {
     width: 40px;
     border-color: #1f1f1f;
+    -webkit-transition: all .3s;
     transition: all .3s;
 }
 
@@ -643,7 +860,8 @@ nav img {
 }
 
 .our-works:hover .img-work {
-    transform: scale(1.4, 1.4);
+    -webkit-transform: scale(1.4, 1.4);
+            transform: scale(1.4, 1.4);
 }
 
 
@@ -668,12 +886,14 @@ nav img {
 /* Start Pricing */
 
 .pricing .card {
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
     border: none
 }
 
 .pricing .card:hover {
-    box-shadow: 0 0 65px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 65px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 65px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-title {
@@ -706,7 +926,8 @@ nav img {
     font-size: 12px;
     color: #fff;
     background-color: #00c3da;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
 }
 
 .card-prim li {
@@ -759,7 +980,8 @@ nav img {
 
 .our-slider {
     position: relative;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
     padding: 60px 100px;
 }
@@ -807,6 +1029,7 @@ nav img {
     right: 0;
     font-size: 25px;
     padding: 8px;
+    -webkit-transition: all .5s;
     transition: all .5s;
 }
 
@@ -828,6 +1051,7 @@ nav img {
     left: 0;
     font-size: 25px;
     padding: 8px;
+    -webkit-transition: all .5s;
     transition: all .5s;
 }
 
@@ -844,6 +1068,7 @@ nav img {
 .icons a img {
     width: 200px;
     opacity: .7;
+    -webkit-transition: all .5s;
     transition: all .5s;
 }
 
@@ -909,7 +1134,8 @@ nav img {
 .form-control:focus {
 
     border-color: #1f1f1f;
-    box-shadow: 0 0 0;
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
 }
 
 textarea {
@@ -931,7 +1157,8 @@ form .btn:hover {
 }
 
 form .btn:focus {
-    box-shadow: 0 0 0
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0
 }
 
 /* End Contact */
@@ -1040,6 +1267,7 @@ footer {
 }
 
 .footer-icons i {
+    -webkit-transition: all .3s;
     transition: all .3s;
 }
 
@@ -1268,4 +1496,4 @@ footer {
 
     .slider-a2 {
         display: none;
-    }
+    }}
